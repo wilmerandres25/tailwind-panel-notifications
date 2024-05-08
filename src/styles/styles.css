@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+    --White: hsl(0, 0%, 100%);
+    --Very-light-greyish-blue: hsl(210, 60%, 98%);
+    --Light-greyish-blue-1: hsl(211, 68%, 94%);
+    --Light-greyish-blue-2: hsl(205, 33%, 90%);
+    --Greyish-blue: hsl(219, 14%, 63%);
+    --Dark-greyish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url(../../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf)
+}
+
+body {
+    font-family: 'Plus Jakarta Sans';
+}
+
+.main {
+    padding: 24px 16px;
+}
+
+.notifications {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+    & .title {
+        color: var(--Very-dark-blue);
+        font-weight: 800;
+        font-size: 1.25rem; /*20px*/
+        word-spacing: 9px;
+    }
+
+    & .number {
+        display: inline-block;
+        background-color: var(--Blue);
+        color: var(--White);
+        width: 32px;
+        height: 25px;
+        text-align: center;
+        border-radius: 6px;
+    }
+
+    & .mark {
+        color: var(--Dark-greyish-blue);
+        font-size: 0.875rem; /*14px*/
+        font-weight: 500;
+        cursor: pointer;
+
+        &:hover {
+            color: var(--Blue);
+        }
+    }
+}
