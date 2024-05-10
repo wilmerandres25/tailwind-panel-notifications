@@ -62,3 +62,100 @@ body {
         }
     }
 }
+
+.post {
+    background-color: var(--Very-light-greyish-blue);
+    border-radius: 8px;
+    display: flex;
+    position: relative;
+    gap: 13px;
+    padding: 16px;
+    font-size: 0.875rem; /*14px*/
+    color: var(--Dark-greyish-blue);
+    margin-bottom: 10px;
+
+    & .image {
+        width: 39px;
+        height: 39px;
+    }
+
+    & .name {
+        font-weight: bold;
+        color: var(--Very-dark-blue);
+        &:hover {
+            color: var(--Blue);
+            cursor: pointer;
+        }
+    }
+
+    & .reaction {
+        font-weight: bold;
+        &:hover {
+            color: var(--Blue);
+            cursor: pointer;
+        }
+    }
+
+    & .group {
+        font-weight: bold;
+        color: var(--Blue);
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    & .time {
+        color: var(--Greyish-blue);
+        font-size: 0.875rem;
+        font-family: 500;
+    }
+
+    & .message {
+        margin-top: 10px;
+        border: 1px solid var(--Light-greyish-blue-2);
+        padding: 16px;
+        border-radius: 5px;
+        &:hover {
+            background-color: var(--Light-greyish-blue-2);
+            cursor: pointer;
+        }
+    }
+
+    & .picture {
+        width: 39px;
+        height: 39px;
+        position: absolute;
+        right: 16px;
+        &:hover {
+            width: 40px;
+            height: 40px;
+            border: 1px solid var(--Light-greyish-blue-2);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}
+
+.not-read {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: var(--Red);
+    margin-left: 8px;
+    border-radius: 50%;
+}
+
+.post-not-read {
+    background-color: var(--Light-greyish-blue-1);
+}
+
+@media (min-width: 768px) {
+    .main {
+        width: 730px;
+        margin: 0 auto;
+    }
+
+    .post {
+        font-size: 1rem;
+    }
+}
