@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Plus Jakarta Sans';
+        src: url(../../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf) format('ttf');
+    }
+}
+
+@layer components {
+    .main { @apply px-6 py-4 tablet:w-[730px] tablet:mx-auto; }
+    .notifications { @apply flex justify-between mb-6; }
+    .title { @apply tracking-wide text-Very-dark-blue font-[800] text-[1.25em]; }
+    .number { @apply inline-block bg-Blue text-White w-8 h-8 text-center rounded-md; }
+    .mark { @apply text-Dark-greyish-blue text-[0.875em] font-[500] cursor-pointer hover:text-Blue; }
+    .post { @apply bg-Very-light-greyish-blue rounded-lg flex relative gap-[13px] p-4 text-[0.875em] text-Dark-greyish-blue mb-[10px] tablet:text-[1em]; }
+    .image { @apply w-[39px] h-[39px]; }
+    .name { @apply font-bold text-Very-dark-blue hover:text-Blue hover:cursor-pointer; }
+    .reaction { @apply font-bold hover:text-Blue hover:cursor-pointer; }
+    .group { @apply font-bold text-Blue hover:cursor-pointer; }
+    .time { @apply text-Greyish-blue text-[0.875em] font-[500]; }
+    .message { @apply mt-[10px] border border-solid border-Light-greyish-blue-2 p-4 rounded-[5px] hover:bg-Light-greyish-blue-2 hover:cursor-pointer; }
+    .picture { @apply w-[39px] h-[39px] absolute right-4 hover:w-10 hover:h-10 hover:border hover:border-solid hover:border-Light-greyish-blue-2 hover:rounded-[5px] hover:cursor-pointer; }
+    .not-read { @apply inline-block w-2 h-2 bg-Red ml-2 rounded-[50%]; }
+    .post-not-read { @apply bg-Light-greyish-blue-1; }
+}

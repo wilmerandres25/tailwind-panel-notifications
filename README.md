@@ -1,5 +1,6 @@
 # Tailwind Notifications Panel
 An notifications panel made in Tailwind for code training.  
-Link of the YouTube course and project: ["Aprende Tailwind - Curso completo de freeCodeCamp en Español - Panel de Notificaciones."](https://www.youtube.com/watch?v=5HtRcMSO1Ro&t=5355s&ab_channel=freeCodeCampEspa%C3%B1ol)
 
-Link of the YouTube course and proyect with the notifications area ready and moving to the post area:["Aprende Tailwind - Curso completo de freeCodeCamp en Español - Panel de Notificaciones - Area Post."](https://www.youtube.com/watch?v=5HtRcMSO1Ro&t=9745s&ab_channel=freeCodeCampEspa%C3%B1ol)
+It has the CSS3 and Tailwind styles files. Currently is applying the Tailwind styles.
+
+This project is a challenge from the Frontend Mentor..
